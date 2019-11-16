@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "production": "ryansw-website",
+    "development": "ryansw-website-dev"
+  }
+}
