@@ -1,0 +1,13 @@
+.CanvasClock {
+    padding: 0px;
+    margin: 0px;
+    display: none;
+}
+
+.CanvasClock canvas {
+    float: left;
+    padding: 0px;
+    margin: 0px;
+    width: 10%;
+    height: 10%;
+}

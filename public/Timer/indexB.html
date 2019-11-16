@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en"><head><title>SVHS Timer</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="static/Notice.css" />
+</head><body>
+The Timer is currently transitioning to a new server<br>
+Sorry for the inconvinience.
+<div id="EventNoticeDisplay" class="NoticeDisplay"><canvas class="NoticeCanvas"></canvas></div>
+<script type="text/javascript" src="static/Notice.js"></script>
+<script type="text/javascript">
+window.addEventListener("load", function() {
+    NoticeDisplay = new Notice(document.getElementById("EventNoticeDisplay"), 69, 100, 0, 10);
+	NoticeDisplay.Display("In Transition");
+});
+</script>
+</body>
+</html>

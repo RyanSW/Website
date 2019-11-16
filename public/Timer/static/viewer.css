@@ -1,0 +1,118 @@
+body {
+    overflow: hidden;
+    font-family: Monospace;
+    color: #000;
+    background-color: #fff;
+      -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */
+}
+
+h1 {
+    margin: 0px;
+}
+
+#DayType {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font-size: 8vh;
+    display: none;
+}
+
+#AudioQueue2 {
+    position: absolute;
+    display: none;
+    font-size: 5vh;
+    font-family: Veranda;
+    height: 3em;
+    width: 90vw;
+    line-height: 1em;
+    top: 35vh;
+    left: 5vw;
+    text-align: center;
+    verticle-align: center;
+    background-color: rgba(100,20,20,0.95);
+    color: black;
+    cursor: pointer;
+}
+
+#AudioQueue {
+    position:absolute;
+    min-height:60px;
+    min-width:300px;
+	width: 10vw;
+	height: 10vh;
+    background-color:rgba(0,0,0,0.9);
+    color: #fff;
+    top:calc(50vh - 100px);
+    left:calc(50vw - 150px);
+    padding:5px;
+    font-size:22px;
+    text-align:center;
+    border: 2px solid #fff;
+    border-radius:6px
+}
+
+#AudioQueueAnswers {
+    margin-top: 6px;
+}
+
+.AudioQueueAns {
+    width:50px;
+    padding:4px;
+    border: 1px solid #fff;
+    border-radius:3px;
+    cursor:pointer
+}
+
+#ButtonBar {
+    position: absolute;
+    display: inline;
+    top: 1vh;
+}
+
+#ButtonBar svg {
+    margin-left: 1vw;
+    float: left;
+    cursor: pointer;
+    width: 7vh;
+    height: 7vh;
+}
+
+#MuteButton {
+    display: none;
+}
+
+#SettingsButton {
+    display: none;
+}
+
+#SettingsBox {
+    display: none;
+    position: absolute;
+    border: 3px solid;
+    border-color: #000; 
+    background-color: #fff;
+    padding: 5px;
+    width: 1000px;
+    max-width: 80vw;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    max-height: 90vh;
+    top: 5vh;
+    overflow-y: scroll;
+    overflow-x: none;
+}
+
+#SettingsClose {
+    display: inline;
+    position: absolute;
+    right: 0px;
+    margin: 5px;
+    border: 2px solid;
+    padding: 4px;
+    cursor: pointer;
+}

@@ -1,0 +1,37 @@
+<!doctype html><html lang="en"><head><title>Update Checker</title></head><body><h1>Update Checker</h1>
+<pre id="log">Updates:
+</pre><br>Last Updated: <span id="last">0</span><br>Load Time: <span id="load">0</span><br>Current Time: <span id="cur">0</span>
+<script type="text/javascript">
+var Chk = 0;
+
+function Load() {
+    var oReq = new XMLHttpRequest();
+    oReq.addEventListener("load", function() {
+        obj = JSON.parse(this.response);
+        Time = obj.LatestU;
+        document.getElementById("last").innerHTML = obj.LatestU;
+        document.getElementById("load").innerHTML = obj.Current;
+        document.getElementById("cur").innerHTML = obj.Current;
+        setInterval(LatestTime, 1000);
+    });
+    oReq.open("GET", "LatestUpdate.php");
+    oReq.send();
+}
+
+function LatestTime() {
+    var oReq = new XMLHttpRequest();
+    oReq.addEventListener("load", function() {
+        obj = JSON.parse(this.response);
+        document.getElementById("last").innerHTML = obj.LatestU;
+        document.getElementById("cur").innerHTML = obj.Current;
+        if(obj.UIndex > Chk) {
+            Chk = obj.UIndex;
+            document.getElementById("log").innerHTML += "UD At " + obj.LatestU + "\n";
+        }
+    });
+    oReq.open("GET", "LatestUpdate.php");
+    oReq.send();
+}
+
+window.onload = Load;
+</script></body></html>
