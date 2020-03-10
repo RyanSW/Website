@@ -17,7 +17,7 @@ function SetupManager(p_Man) {
       ? "No more events today"
       : p_Man.System.GetNextSchedule().DisplayName;
   p_Man.FlashFreq = 1000;
-  p_Man.OnTick = function (p_Time, p_Remaining, p_Event) {
+  p_Man.OnTick = function(p_Time, p_Remaining, p_Event) {
     if (p_Event != undefined) {
       CountDownClock.UpdateTitle(p_Event.Name);
       EventTimeClock.UpdateTime(p_Event.Time);
@@ -41,23 +41,23 @@ function SetupManager(p_Man) {
     CountDownClock.UpdateTime(p_Remaining);
     CurrentTimeClock.UpdateTime(p_Time);
   };
-  p_Man.OnFlash = function (p_Time, p_FlashState) {
+  p_Man.OnFlash = function(p_Time, p_FlashState) {
     CountDownClock.UpdateTime(-1, p_FlashState | !FlashColon);
     EventTimeClock.UpdateTime(-1, p_FlashState | !FlashColon);
     CurrentTimeClock.UpdateTime(-1, p_FlashState | !FlashColon);
   };
-  p_Man.OnNotice = function (p_Event) {
+  p_Man.OnNotice = function(p_Event) {
     NoticeDisplay.Display(p_Event.Message, 3000);
     Sound.Trigger();
   };
   p_Man.Start();
 }
 
-window.addEventListener("load", function () {
+window.addEventListener("load", function() {
   document.getElementById("JSNotice").style.display = "none";
   UpdaterLoad();
   DayType = document.getElementById("DayType");
-  GetSystem("data_2019d.json", function (data) {
+  GetSystem("data_2019e.json", function(data) {
     EVManager = new EventManagerObject(data);
     DayType.style.display = "block";
     MuteButton.style.display = "block";
@@ -111,18 +111,18 @@ window.addEventListener("load", function () {
   SettingsBox = document.getElementById("SettingsBox");
   SettingsBox.style.display = "none";
   SettingsButton = document.getElementById("SettingsButton");
-  SettingsButton.addEventListener("click", function () {
+  SettingsButton.addEventListener("click", function() {
     SettingsBox.style.display =
       SettingsBox.style.display != "none" ? "none" : "block";
   });
   document
     .getElementById("SettingsClose")
-    .addEventListener("click", function () {
+    .addEventListener("click", function() {
       SettingsBox.style.display = "none";
     });
   Sound = new SoundManager("sound");
   MuteButton = document.getElementById("MuteButton");
-  MuteButton.addEventListener("click", function () {
+  MuteButton.addEventListener("click", function() {
     if (!Sound.initilized) {
       Sound.Initialize();
     }
@@ -137,7 +137,7 @@ window.addEventListener("load", function () {
     localStorage.setItem("Mute", Sound.Muted);
   }
   MuteButton.viewBox.baseVal.x = Sound.Muted ? 0 : 100;
-  Sound.onNeedQueue = function () {
+  Sound.onNeedQueue = function() {
     document.getElementById("AudioQueue").style.display = "block";
     setInterval(dismisalarm, 30000);
   };
@@ -233,7 +233,7 @@ function CheckUpdate() {
 
 function DoUpdate() {
   NoticeDisplay.Display("Data Update");
-  GetSystem("data_2019d.json", function (data) {
+  GetSystem("data_2019e.json", function(data) {
     NoticeDisplay.Display("Loading..", 1500);
     EVManager.Stop();
     EVManager = new EventManagerObject(data);
