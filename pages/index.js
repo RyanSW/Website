@@ -5,13 +5,13 @@ import {
   faGlobe,
   faEnvelope,
   faDownload,
-  faPlus
+  faPlus,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithubSquare,
   faLinkedin,
   faGit,
-  faGithub
+  faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 
 import { Container, Row, Col, Button } from "reactstrap";
@@ -78,7 +78,7 @@ class Home extends Component {
               </Col>
             </Row>
             <hr />
-            {pf_projects.map(project => (
+            {pf_projects.map((project) => (
               <Row className="row-project">
                 <Col md={4} className="text-center">
                   <img src={project.image} className="img-project" />
@@ -112,7 +112,7 @@ class Home extends Component {
                 <h3>Education</h3>
               </Col>
               <Col md={8}>
-                {pf_education.map(school => (
+                {pf_education.map((school) => (
                   <Row className="row-education">
                     <Col md={12}>
                       <p className="item-title">{school.name}</p>
@@ -147,7 +147,7 @@ class Home extends Component {
                     <p className="item-title">Dean's List</p>
                   </Col>
                   <Col xs={4}>
-                    <p className="item-date">5 Terms</p>
+                    <p className="item-date">6 Terms</p>
                   </Col>
                 </Row>
               </Col>
@@ -157,7 +157,7 @@ class Home extends Component {
                 <h3>Work Experience</h3>
               </Col>
               <Col md={8}>
-                {pf_work.map(work => (
+                {pf_work.map((work) => (
                   <Row className="row-work">
                     <Col md={12}>
                       <p className="item-title">{work.location}</p>
