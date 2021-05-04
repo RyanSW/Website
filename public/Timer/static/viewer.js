@@ -57,7 +57,7 @@ window.addEventListener("load", function() {
   document.getElementById("JSNotice").style.display = "none";
   UpdaterLoad();
   DayType = document.getElementById("DayType");
-  GetSystem("data_2019e.json", function(data) {
+  GetSystem("data_2021b.json", function(data) {
     EVManager = new EventManagerObject(data);
     DayType.style.display = "block";
     MuteButton.style.display = "block";
@@ -233,7 +233,7 @@ function CheckUpdate() {
 
 function DoUpdate() {
   NoticeDisplay.Display("Data Update");
-  GetSystem("data_2019e.json", function(data) {
+  GetSystem("data_2021b.json", function(data) {
     NoticeDisplay.Display("Loading..", 1500);
     EVManager.Stop();
     EVManager = new EventManagerObject(data);

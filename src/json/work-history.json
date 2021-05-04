@@ -1,0 +1,38 @@
+{
+  "jpl": {
+    "title": "Jet Propulsion Laboratory",
+    "position": "Electronics Intern",
+    "src": "../assets/jpl.jpg",
+    "isJob": true,
+    "begin": "May 2019",
+    "end": "Present",
+    "content": "Working on embedded software for the Polar Radiant Energy in the Far InfraRed Experiment (PREFIRE) CubeSat. Wrote embedded divers for interfacing with hardware SPI and UART modules on the Vorago VA10820. Wrote a C library for building, sending, receiving, and decoding CCSDS Space Protocol Packets in an ARM mcu. Writing a Python library for dynamically encoding, decoding, and handling CCSDS Space Protocol Packets. Assisting with the development of an ARM based stepper motor driver for optics on the PREFIRE CubeSat."
+  },
+  "cpp1": {
+    "title": "Cal Poly Pomona Client Services",
+    "position": "Desktop Support Student Assistant",
+    "src": "../assets/cpp1.jpeg",
+    "begin": "July 2017",
+    "end": "June 2019",
+    "isJob": true,
+    "content": "Assisted desktop support technicians in maintaining state equipment and working with users to resolve issues. Managed a support incident and request ticket queue and worked independently to resolve issues. Lead and supported the implementation of Teamviewer for providing remote assistance to our users."
+  },
+  "cpp2": {
+    "title": "Cal Poly Pomona Client Services",
+    "position": "Classroom Technology Student Assistant",
+    "src": "../assets/cpp2.jpg",
+    "begin": "February 2017",
+    "end": "July 2017",
+    "isJob": true,
+    "content": "Supported media and teaching technology in classrooms across the entire campus. Assisted IT staff with setup and installation of multimedia equipment in classrooms."
+  },
+  "bar": {
+    "title": "Barstow Community College Performing Arts Center",
+    "position": "Sound and Lighting Technician",
+    "src": "../assets/bar.jpg",
+    "begin": "January 2015",
+    "end": "July 2015",
+    "isJob": true,
+    "content": "Primary sound technician for all purchased venue use. Provided assistance to college for internal venue use for college events and drama club performances."
+  }
+}
