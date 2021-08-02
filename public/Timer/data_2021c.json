@@ -1,0 +1,197 @@
+{
+  "__comment": "Date Code is Year - 1900, (eg 2017 = 117), month - 1, and day. EG Feb 25, 2017 = 1170125",
+  "Description": "Silver Valley Bell System",
+  "Name": "Silver Valley High School",
+  "Path": "svhs",
+  "Schedules": [
+    {
+      "Dates": [],
+      "Description": "New Schedule Regular",
+      "DisplayName": "Regular Day",
+      "Events": [
+        {
+          "Description": "First Period Starts",
+          "Message": "First Period",
+          "Name": "First Period Starts",
+          "Time": 26400
+        },
+        {
+          "Description": "First Period Ends",
+          "Message": "First Period over",
+          "Name": "First Period Ends",
+          "Time": 30300
+        },
+        {
+          "Description": "Second Period Starts",
+          "Message": "Second Period",
+          "Name": "Second Period Starts",
+          "Time": 30600
+        },
+        {
+          "Description": "Second Period Ends",
+          "Message": "Second Period over",
+          "Name": "Second Period Ends",
+          "Time": 34260
+        },
+        {
+          "Description": "Third Period Starts",
+          "Message": "Third Period",
+          "Name": "Third Period Starts",
+          "Time": 34560
+        },
+        {
+          "Description": "Third Period Ends",
+          "Message": "Third Period over",
+          "Name": "Third Period Ends",
+          "Time": 38220
+        },
+        {
+          "Description": "Fourth Period Starts",
+          "Message": "Fourth Period",
+          "Name": "Fourth Period Starts",
+          "Time": 38520
+        },
+        {
+          "Description": "Fourth Period Ends",
+          "Message": "Fourth Period over",
+          "Name": "Fourth Period Ends",
+          "Time": 42180
+        },
+        {
+          "Description": "Lunch Ends",
+          "Message": "Lunch over",
+          "Name": "Lunch Ends",
+          "Time": 43980
+        },
+        {
+          "Description": "Fifth Period Starts",
+          "Message": "Fifth Period",
+          "Name": "Fifth Period Starts",
+          "Time": 44280
+        },
+        {
+          "Description": "Fifth Period Ends",
+          "Message": "Fifth Period over",
+          "Name": "Fifth Period Ends",
+          "Time": 47940
+        },
+        {
+          "Description": "Sixth Period Starts",
+          "Message": "Sixth Period",
+          "Name": "Sixth Period Starts",
+          "Time": 48240
+        },
+        {
+          "Description": "Sixth Period Ends",
+          "Message": "Sixth Period over",
+          "Name": "Sixth Period Ends",
+          "Time": 51900
+        }
+      ],
+      "Name": "Normal Day",
+      "Reason": 1,
+      "WDays": 54
+    },
+    {
+      "Dates": [],
+      "Description": "New Schedule Minimum",
+      "DisplayName": "Minimum Day",
+      "Events": [
+        {
+          "Description": "First Period Starts",
+          "Message": "First Period",
+          "Name": "First Period Starts",
+          "Time": 26400
+        },
+        {
+          "Description": "First Period Ends",
+          "Message": "First Period over",
+          "Name": "First Period Ends",
+          "Time": 28260
+        },
+        {
+          "Description": "Second Period Starts",
+          "Message": "Second Period",
+          "Name": "Second Period Starts",
+          "Time": 28560
+        },
+        {
+          "Description": "Second Period Ends",
+          "Message": "Second Period over",
+          "Name": "Second Period Ends",
+          "Time": 30360
+        },
+        {
+          "Description": "Third Period Starts",
+          "Message": "Third Period",
+          "Name": "Third Period Starts",
+          "Time": 30660
+        },
+        {
+          "Description": "Third Period Ends",
+          "Message": "Third Period over",
+          "Name": "Third Period Ends",
+          "Time": 32460
+        },
+        {
+          "Description": "Fourth Period Starts",
+          "Message": "Fourth Period",
+          "Name": "Fourth Period Starts",
+          "Time": 32760
+        },
+        {
+          "Description": "Fourth Period Ends",
+          "Message": "Fourth Period over",
+          "Name": "Fourth Period Ends",
+          "Time": 34560
+        },
+        {
+          "Description": "Advisory Starts",
+          "Message": "Advisory",
+          "Name": "Advisory Starts",
+          "Time": 34860
+        },
+        {
+          "Description": "Advisory Ends",
+          "Message": "Advisory over",
+          "Name": "Advisory Ends",
+          "Time": 37800
+        },
+        {
+          "Description": "Lunch Ends",
+          "Message": "Lunch over",
+          "Name": "Lunch Ends",
+          "Time": 39600
+        },
+        {
+          "Description": "Fifth Period Starts",
+          "Message": "Fifth Period",
+          "Name": "Fifth Period Starts",
+          "Time": 39900
+        },
+        {
+          "Description": "Fifth Period Ends",
+          "Message": "Fifth Period over",
+          "Name": "Fifth Period Ends",
+          "Time": 41700
+        },
+        {
+          "Description": "Sixth Period Starts",
+          "Message": "Sixth Period",
+          "Name": "Sixth Period Starts",
+          "Time": 42000
+        },
+        {
+          "Description": "Sixth Period Ends",
+          "Message": "Sixth Period over",
+          "Name": "Sixth Period Ends",
+          "Time": 43800
+        }
+      ],
+      "Name": "Minimum Day",
+      "Reason": 1,
+      "WDays": 8
+    }
+  ],
+  "Timezone": -7
+}
