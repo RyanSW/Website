@@ -22,6 +22,11 @@
         "source": "/timer",
         "destination": "/Timer",
         "type": 301
+      },
+      {
+        "source": "/Timer",
+        "destination": "https://timer.ryansw.com/",
+        "type": 301
       }
     ]
   }
